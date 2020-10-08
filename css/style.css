@@ -1,0 +1,92 @@
+@font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+.box {
+    background: #fffeed;
+}
+h2 {
+    color: #222;
+    font-family: 'BMJUA';
+    font-size: 50px;
+    margin: 0;
+}
+h1 {
+    color: #222;
+    font-family: 'BMJUA';
+    font-size: 60px;
+}
+/* reset css */
+
+#section01 {
+    background: url(../images/meta_1.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+}
+/* section01 end */
+
+#section02 {
+    width: 100%;
+}
+
+.sec02-text h2 {
+    padding-top: 5%;
+}
+.sec02-text h1 {
+    padding-bottom: 5%;
+}
+
+/* sec02-1 */
+.sec02-1 {
+    display: flex;
+}
+.balloon_01 {
+    position:relative;
+    margin: 50px;
+    width:400px;
+    height:300px;
+    background:#f26422;
+    border-radius: 30px;  transform:rotate(0deg);
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1); 
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1);   
+    filter: FlipH;
+    -ms-filter: "FlipH";
+   }
+.balloon_01:after {
+    border-top: 0px solid #f26422;
+    border-left: 35px solid transparent;
+    border-right: 0px solid  transparent;
+    border-bottom: 35px solid #f26422;
+    content:"";
+    position:absolute;
+    top:230px;
+    left:-35px;
+}
+
+/* sec02-2 */
+.sec02-2 {
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+.balloon_02 {
+    position:relative;
+    margin: 50px;
+    width:400px;
+    height:300px;
+    background:#333333;
+    border-radius: 30px;
+  
+}
+.balloon_02:after {
+    border-top: 0px solid #333333;
+    border-left: 35px solid transparent;
+    border-right: 0px solid  transparent;
+    border-bottom: 35px solid #333333;
+    content:"";
+    position:absolute;
+    top:230px;
+    left:-35px;
+}
