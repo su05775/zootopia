@@ -13,6 +13,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- swiper css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- aos css -->
     <link rel="stylesheet" href="css/style.css">
@@ -21,35 +25,180 @@
 <body>
     <div class="box">
         <section id="section01">
+            <img src="images/logo_2.png" alt="logo" class="logo">
+        </section> 
 
-        </section>    
         <section id="section02">
             <div class="sec02-text">
                 <h2 class="text-center">누구나 살고싶은 도시 1위, 주토피아</h2>
                 <h1 class="text-center">연쇄 실종 사건 발생!</h1>    
             </div>
-            
-            <div class="container-fluid">
+            <div class="container">
                 <div class="col-sm-12 sec02-1">
-                    <div class="col-sm-5">
-                        <div class="balloon_01"></div>      
-                    </div>
-                    <div class="col-sm-5">
+                    <div class="col-sm-6 sec02-1-img">
                         <img src="images/닉.png" alt="닉">
+                        <div class="sec02-1-img-text">
+                            <p class="text-center sec02-1-img-text-p">전부 거짓말인 사기꾼 여우</p>
+                            <h3 class="text-center sec02-1-img-text-h3">닉 와일드</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 balloon_01">
+                        <div class="sec02-1-text text-center">
+                            <p>
+                                “첫째, 절대 남한테 얕잡아 보이지말자. <br>
+                                둘째, 세상이 여우를 믿지 못할 <br>
+                                교활한 짐승으로 본다면, <br>
+                                굳이 다르게 보이려고 애쓰지 말자.”
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-sm-12 sec02-2">
-                    <div class="col-sm-5">
-                        <img src="images/주디.png" alt="닉">
+                    <div class="col-sm-6 balloon_02">
+                        <div class="sec02-2-text text-center">
+                            <p class="text-center">
+                                “영화 속 해피엔딩과는 거리가 멀어요.  <br>
+                                삶은 복잡한거예요”
+                            </p>
+                            <p class="text-center">
+                                “그럼  내가 최초가 되면 되겠다!”
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-sm-5">
-                        <div class="balloon_02"></div>      
+                    <div class="col-sm-6 sec02-2-img">
+                        <img src="images/주디.png" alt="주디">
+                        <div class="sec02-2-img-text">
+                            <p class="text-center sec02-2-img-text-p">주토피아 최초의 토끼 경찰관</p>
+                            <h3 class="text-center sec02-2-img-text-h3">주디 홉스</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        </div>
+
+        <section id="section03">
+            <div class="sec03-logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="sec03-maintext">
+                <img src="images/겨울왕국.png" alt="" class="img1">
+                <img src="images/빅히어로.png" alt="" class="img2">
+                <p>제작진</p>
+            </div>
+            <h3 class="sec03-h3">추격전의 신세계가 시작된다!</h3>
+            <div class="warp">
+                <div class="video-bg">
+                    <video id="video" controls autoplay poster="images/meta_1.jpg">
+                        <source src="video/[주토피아] 메인 예고편.mp4" type="video/mp4">
+                    </video>
+                </div>    
+            </div>
+            <div class="container sns">
+                <img src="images/icon1.png" alt="">
+                <img src="images/icon2.png" alt="">
+                <img src="images/icon4.png" alt="">
+                <img src="images/icon3.png" alt="">
+            </div>
+        </section>
+
+        <section id="section04">
+            <div class="col-sm-12 sec04-text">
+                <h2 class="text-center">스틸컷 모아보기</h2>
+            </div>
+             <!-- Swiper -->
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷 메인.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/main.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/main.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷 메인.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/스틸컷5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/main.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/main.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            var galleryThumbs = new Swiper('.gallery-thumbs', {
+              spaceBetween: 10,
+              slidesPerView: 4,
+              freeMode: true,
+              watchSlidesVisibility: true,
+              watchSlidesProgress: true,
+            });
+            var galleryTop = new Swiper('.gallery-top', {
+              spaceBetween: 10,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              thumbs: {
+                swiper: galleryThumbs
+              }
+            });
+          </script>
+
+          <section id="section05">
+              <div class="container-fluid sec05-con">
+                  <div class="col-sm-12 sec05-12">
+                      <div class="col-sm-6 event">
+                        <img src="images/event-1.jpg" alt="">
+                      </div>
+                      <div class="col-sm-6 sec05">
+                            <h2 class="text-center">예매권 이벤트</h2>
+                      </div>
+                  </div>
+              </div>
+          </section>
     </div>
     
 </body>

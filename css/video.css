@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.warp {
+    position: relative;
+}
+
+.video-bg {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.video-text {
+    position: absolute;
+    z-index: 98;
+    color: #fff;
+}
+
+#video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    transition: 1s opacity;
+}
